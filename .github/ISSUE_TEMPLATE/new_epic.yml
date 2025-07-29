@@ -1,0 +1,31 @@
+name: New Epic - Request a new high level feature
+description: Suggest an idea for our solutions.
+title: "[VERB] <your epic subject here>"
+labels: ['epic']
+body:
+  - type: textarea
+    id: feature_summary
+    attributes:
+      label: What is this feature about?
+      description: A clear and concise description of what the epic is. Ex. As an end-user, I would like to be able to [...]
+      placeholder: As a <type of user/customer>, I want <an action/business need>, So that <a benefit/a business value>
+    validations:
+      required: true
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Describe the different use-cases you'd like
+      description: |
+        Use bullets and nesting to list your use cases clearly. Within this epic, you can use this task lists 
+        to break work into smaller tasks and track the full set of work to completion. If a task requires further 
+        tracking or discussion, you can convert the task to an issue by hovering over the task and clicking in 
+        the upper-right corner of the task.
+    validations:
+      required: true
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
